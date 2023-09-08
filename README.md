@@ -54,7 +54,7 @@ https://devcenter.heroku.com/articles/deploying-nodejs
 - Chat restore if meeting is left
 
 ## Report
-The detailed report can be found here (https://drive.google.com/file/d/1C1KSifTKFqnpTGB9E_pZp03mPhmlqNhA/view?usp=sharing)
+The detailed report can be found [here](https://drive.google.com/file/d/1C1KSifTKFqnpTGB9E_pZp03mPhmlqNhA/view?usp=sharing)
 
 ## Team Members
 
