@@ -29,10 +29,8 @@ localhost:<PORT>
 ```shell
 https://devcenter.heroku.com/articles/deploying-nodejs
 ```
-- The deployed application can be found at the following link
-```shell
-https://video-chat-app-kshitiz.herokuapp.com/
-```
+- The deployed application can be found at the following [Link](https://video-chat-app-kshitiz.herokuapp.com/)
+
 - To run locally:
     - Change port in server.js to 3000
     - In script.js change peer port to 3000
