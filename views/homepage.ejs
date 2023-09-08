@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-  include('basetemplate.ejs') %>
+    <title>CN Project</title>
+    <link rel="stylesheet" href="homepage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="main__ejs__content">
+        <!-- <div class="meet__image">
+            <img src="https://media.istockphoto.com/vectors/concept-of-consultation-with-a-business-leader-who-discusses-the-vector-id1193052301?k=20&m=1193052301&s=612x612&w=0&h=sSryerhtE3eSxrqVpz09aAbDHr9zxrgRmDjfU-xQZ_I=" id="meet_img" alt="meetimg">
+        </div> -->
+        <div class="main__form__content">
+            <!-- <img class="meet__image" src="https://modelschoolrohtak.com/css/gallery/VideoIcon.jpg" alt="image"/> -->
+            <img class="meet__image" src="https://babich.biz/content/images/2017/01/schools-promotional-videos.jpg" alt="image"/>
+            <h3>Join A Meeting !!!</h3>
+            <div class="join__meeting">
+                <input type="text" class='input__credentials' id='meet_id' placeholder="Enter meeting Id">
+                <input type="text" class='input__credentials' id="peer_name" placeholder="Enter your name">
+                <div class="form__button">
+                    <button onclick="return_meet_link()" class="form__button1">JoinMeeting</button> 
+                </div>
+            </div>
+            <hr/>
+            <h3>Host a Meeting with just one click !!!</h3>
+            <div class="host__meeting">
+                <input type="text" class='input__credentials' id="host_peer_name" placeholder="Enter your name">
+                <div class="form__button">
+                    <button class="form__button2" onclick="join_host('<%= roomId %>')">CreateNewLink</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script_home.js"></script>
+</body>
+</html>

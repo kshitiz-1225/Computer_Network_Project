@@ -1,0 +1,185 @@
+#video-grid{
+    display:flex;
+    flex-wrap:wrap;
+    overflow-y:scroll
+    /* justify-content:center; */
+}
+
+#video-grid::-webkit-scrollbar {
+    
+    display:none;
+}
+
+video {
+    
+    height:250px;
+    width:340px;
+    object-fit:cover;
+}
+
+.main {
+    height:100vh;
+    display:flex;
+}
+
+.main__left{
+    flex:0.8;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+}
+
+.main__right{
+    flex:0.2;
+    display:flex;
+    flex-direction:column;
+    /* justify-content:space-between; */
+    padding:3px;
+    /* background-image:url('https://img.freepik.com/free-vector/white-blurred-background_1034-249.jpg?w=2000');
+    background-repeat: no-repeat;
+    background-size:cover; */
+    background-color:white;
+    border:1px solid #141A46;
+    /* border-radius:10px; */
+}
+
+.main__videos{
+    flex-grow:1;
+    background-color:#313552;
+    /* background-image:url('https://img.freepik.com/free-vector/white-blurred-background_1034-249.jpg?w=2000');
+    background-repeat:no-repeat;
+    background-size:cover; */
+    display:flex;
+    /* justify-content:center; */
+    /* align-items:center; */
+}
+
+.main__controls__block{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    /* border:2px solid red; */
+}
+
+.main__controls__button{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:0 5px 0 5px;
+    padding:8px 10px;
+    min-width:80px;
+    cursor:pointer;
+}
+
+.main__controls__button:hover{
+    border-radius:5px;
+    background-color:#343434;
+}
+
+.main__controls{
+    background-color:#313552;
+    border-top:1px solid white;
+    /* background-image:url('https://img.freepik.com/free-vector/white-blurred-background_1034-249.jpg?w=2000');
+    background-repeat:no-repeat;
+    background-size:cover; */
+}
+
+span{
+    font-size:larger;
+    color:white;
+}
+
+.fa{
+    color:white;
+}
+
+.fa-solid{
+    color:white;
+}
+
+#chat_message{
+    border:1px solid white;
+    outline-width:0px;
+    font-size:13px;
+    border-radius:6px;
+    width:100%;
+    padding:10px;
+    color:white;
+    background-color:#141A46;
+    margin:0px 0px 10px 0px;
+}
+
+.chat__header{
+    border:1px solid #292826;
+    border-radius:10px;
+    background-color:#141A46;
+    color:#F9D342;
+    padding:15px;
+    display:flex;
+    flex-wrap:wrap;
+    font-size:12px;
+    margin:15px 3px 0px 3px;
+}
+
+.main__chat_window{
+    overflow-y:scroll;
+    flex-grow:1;
+    margin:8px 0px 5px 0px; 
+}
+
+.main__chat_window::-webkit-scrollbar{
+    display:none;
+}
+
+.message{
+    border:1px solid #141A46;
+    color:#141A46;
+    padding:5px;
+    display:block;
+    /* background-color:#EC8B5E; */
+    /* background-color:#f1f1f1; */
+    margin-top:1px;
+    border-radius:5px;
+    margin-left:0px;
+    font-size:13px;
+    font-weight:300;
+}
+
+ul{
+    list-style-type:none;
+}
+
+h5{
+    text-align:center;
+    color:#141A46;
+}
+
+.unmute, .unvideo{
+    color:#F9D342;
+}
+
+video {
+    border:3px solid #EC8B5E;
+    border-radius:5px;
+}
+
+::placeholder{
+    color:white;
+}
+
+/* .video__stop{
+    background-color:red;
+} */
+
+/* .video__h3{
+    color:white;
+} */
+
+@media only screen and (max-width: 900px) {
+    .main__right{
+        flex:0.5;
+    }
+
+}
